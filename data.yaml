@@ -1,0 +1,13 @@
+# AVF-YOLO v2 Mixed Dataset (Longitudinal + Transverse)
+# Anti-forgetting strategy: 30% longitudinal replay
+# Generated from Stage 2 pipeline
+# Labels unified: single class 'wall' (class_id=0)
+
+path: D:/maiying/AVF-YOLO_Project/AVF_YOLO_Project/dataset_mixed_v2
+train: images/train
+val: images/val
+
+# Single class: vessel wall
+nc: 1
+names:
+  0: wall

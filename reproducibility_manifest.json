@@ -1,0 +1,64 @@
+{
+  "experiment_name": "AVF_v2_Mixed",
+  "timestamp": "2026-05-27T17:03:51.946761",
+  "reproducibility": {
+    "random_seed": 42,
+    "deterministic_mode": true
+  },
+  "environment": {
+    "python": "3.10.20",
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "cuda_available": true,
+    "ultralytics": "8.4.46",
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "timestamp": "2026-05-27T16:43:32.527034"
+  },
+  "dataset": {
+    "data_yaml": "D:\\maiying\\AVF-YOLO_Project\\AVF_YOLO_Project\\dataset_mixed_v2\\data.yaml",
+    "data_yaml_md5": "d0809c5f61db55c4b09838f656244ffe",
+    "nc": 1,
+    "names": [
+      "wall"
+    ]
+  },
+  "training_config": {
+    "model_source": "D:\\maiying\\AVF-YOLO_Project\\AVF_YOLO_Project\\runs\\detect\\AVF_Round2_CosLR\\weights\\best.pt",
+    "epochs": 100,
+    "imgsz": 640,
+    "batch": 8,
+    "workers": 4,
+    "lr0": 0.0001,
+    "lrf": 0.01,
+    "cos_lr": true,
+    "optimizer": "AdamW",
+    "weight_decay": 0.0005,
+    "warmup_epochs": 5,
+    "patience": 15,
+    "freeze": 10,
+    "mosaic": 1.0,
+    "mixup": 0.1,
+    "degrees": 10.0,
+    "scale": 0.2,
+    "hsv_v": 0.4,
+    "perspective": 0.0,
+    "shear": 0.0,
+    "close_mosaic": 15
+  },
+  "best_metrics": {
+    "epoch": 48,
+    "mAP50": 0.9919,
+    "mAP50-95": 0.7077,
+    "precision": 0.9732,
+    "recall": 0.9839
+  },
+  "actual_training": {
+    "epochs_completed": 63,
+    "best_epoch": 48,
+    "early_stop_triggered": true,
+    "total_time_hours": 0.308,
+    "max_gpu_memory_gb": 1.38,
+    "batch_actual": 8,
+    "workers_actual": 4
+  }
+}
